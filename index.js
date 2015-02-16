@@ -3,7 +3,7 @@ var MongoClient = require('mongodb').MongoClient
 , assert = require('assert');
 
 // Connection URL
-var url = 'mongodb://localhost:27017/myproject';
+var url = process.env.MONGO_URL;
 
 var client = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
